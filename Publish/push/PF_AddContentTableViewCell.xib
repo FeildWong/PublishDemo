@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PF_AddContentTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NAG-la-WtH">
+                        <rect key="frame" x="145" y="7" width="30" height="30"/>
+                        <state key="normal" title="+"/>
+                        <connections>
+                            <action selector="addButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="gcI-Ed-NIR"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIb-lG-e5c">
+                        <rect key="frame" x="145" y="7" width="30" height="30"/>
+                        <state key="normal" title="2"/>
+                        <connections>
+                            <action selector="centerButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="2g9-ka-RbU"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGN-zL-lLp">
+                        <rect key="frame" x="199" y="7" width="30" height="30"/>
+                        <state key="normal" title="3"/>
+                        <connections>
+                            <action selector="rightButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="vob-OK-cDE"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Dl-Or-Euh">
+                        <rect key="frame" x="84" y="7" width="30" height="30"/>
+                        <state key="normal" title="1"/>
+                        <connections>
+                            <action selector="leftButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Kbc-DQ-6OT"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bGN-zL-lLp" firstAttribute="leading" secondItem="ZIb-lG-e5c" secondAttribute="trailing" constant="24" id="32o-FZ-HSD"/>
+                    <constraint firstItem="NAG-la-WtH" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="DeB-Og-HT4"/>
+                    <constraint firstItem="ZIb-lG-e5c" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="FSZ-Gh-Za0"/>
+                    <constraint firstItem="NAG-la-WtH" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="PDj-bs-AmR"/>
+                    <constraint firstItem="6Dl-Or-Euh" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Tdm-U0-zBe"/>
+                    <constraint firstItem="ZIb-lG-e5c" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="fMc-hH-V9J"/>
+                    <constraint firstItem="ZIb-lG-e5c" firstAttribute="leading" secondItem="6Dl-Or-Euh" secondAttribute="trailing" constant="31" id="jAM-fD-vYk"/>
+                    <constraint firstItem="bGN-zL-lLp" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="wwC-mD-OpT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addbutton" destination="NAG-la-WtH" id="LR7-Do-PuX"/>
+                <outlet property="centerButton" destination="ZIb-lG-e5c" id="DST-sX-y7v"/>
+                <outlet property="leftButton" destination="6Dl-Or-Euh" id="ThC-RS-wTN"/>
+                <outlet property="rightButton" destination="bGN-zL-lLp" id="oKB-bl-vq4"/>
+            </connections>
+            <point key="canvasLocation" x="83" y="93"/>
+        </tableViewCell>
+    </objects>
+</document>

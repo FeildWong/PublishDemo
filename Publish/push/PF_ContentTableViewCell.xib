@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="74" id="KGk-i7-Jjw" customClass="PF_ContentTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lrf-l9-Ezh">
+                        <rect key="frame" x="5" y="5" width="310" height="63.5"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tCD-IG-FRU">
+                                <rect key="frame" x="-5" y="-5" width="20" height="20"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Xm8-Ul-HGq"/>
+                                    <constraint firstAttribute="width" constant="20" id="gSY-7p-zuu"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="deleteButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Rdk-5y-cuC"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="335-vX-4Y8">
+                                <rect key="frame" x="20" y="11.5" width="40" height="40"/>
+                                <color key="backgroundColor" red="0.53489348000000003" green="0.344815445" blue="0.69636722350000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="HbM-d5-TH2"/>
+                                    <constraint firstAttribute="height" constant="40" id="vAc-2K-kef"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QvB-NQ-Igk">
+                                <rect key="frame" x="68" y="8" width="234" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tCD-IG-FRU" firstAttribute="top" secondItem="lrf-l9-Ezh" secondAttribute="top" constant="-5" id="1iA-wa-neD"/>
+                            <constraint firstItem="335-vX-4Y8" firstAttribute="leading" secondItem="tCD-IG-FRU" secondAttribute="trailing" constant="5" id="7Ka-ug-qyC"/>
+                            <constraint firstItem="tCD-IG-FRU" firstAttribute="leading" secondItem="lrf-l9-Ezh" secondAttribute="leading" constant="-5" id="ClY-NK-i2g"/>
+                            <constraint firstItem="335-vX-4Y8" firstAttribute="centerY" secondItem="lrf-l9-Ezh" secondAttribute="centerY" id="DnD-uW-QA7"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="lrf-l9-Ezh" secondAttribute="trailing" constant="5" id="80A-Lw-neF"/>
+                    <constraint firstItem="lrf-l9-Ezh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="WYN-hm-pM1"/>
+                    <constraint firstItem="lrf-l9-Ezh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="mIT-NJ-zWq"/>
+                    <constraint firstAttribute="bottom" secondItem="lrf-l9-Ezh" secondAttribute="bottom" constant="5" id="rQ2-p3-WAq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="closeButton" destination="tCD-IG-FRU" id="r3b-hX-hcW"/>
+                <outlet property="contentLabel" destination="QvB-NQ-Igk" id="M9O-qq-dQ0"/>
+                <outlet property="headImageView" destination="335-vX-4Y8" id="vYy-f9-68z"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="67"/>
+        </tableViewCell>
+    </objects>
+</document>
